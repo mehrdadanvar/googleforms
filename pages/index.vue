@@ -5,7 +5,9 @@
         <QuestionTitle />
         <questionType />
       </div>
-      <div class="body"></div>
+      <div class="body">
+        <bodyMultiple />
+      </div>
       <div class="footer">footer</div>
     </div>
   </div>

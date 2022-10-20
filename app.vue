@@ -5,9 +5,14 @@
   </div>
 </template>
 
+<script>
+  import "@coreui/coreui/dist/css/coreui.min.css";
+  import "@coreui/vue";
+</script>
+
 <style>
-.app{
-  font-family: "Lato";
-  background-color: rgb(198, 180, 224);
-}
+  .app {
+    font-family: "Lato";
+    background-color: rgb(198, 180, 224);
+  }
 </style>
