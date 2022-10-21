@@ -3,7 +3,6 @@
     <label for="">Question Type</label>
     <select name="q-type" id="">
       <option value="">multiple choice</option>
-      <option value="">yes/no</option>
       <option value="">checkbox</option>
       <option value="short-answer">short-answer</option>
       <option value="paragraph">paragraph</option>
@@ -15,9 +14,7 @@
   </div>
 </template>
 
-<script>
-  let mehrdad = "";
-</script>
+<script></script>
 
 <style>
   * {

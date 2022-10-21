@@ -5,10 +5,7 @@
   </div>
 </template>
 
-<script>
-  import "@coreui/coreui/dist/css/coreui.min.css";
-  import "@coreui/vue";
-</script>
+<script></script>
 
 <style>
   .app {

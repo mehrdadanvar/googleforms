@@ -6,8 +6,9 @@
         <questionType />
       </div>
       <div class="body">
-        <bodyMultiple />
+        <MasterRadio />
       </div>
+      <!-- <Radio /> -->
       <div class="footer">footer</div>
     </div>
   </div>
@@ -20,12 +21,12 @@
   //'monospace', monospace
 </script>
 
-<style>
+<style scoped>
   .container {
     display: flex;
     flex-direction: column;
     width: 60rem;
-    height: 20rem;
+    height: 30rem;
     border: 1px solid grey;
     border-radius: 2rem;
     background-color: white;
@@ -34,5 +35,11 @@
   .head {
     display: flex;
     flex-direction: row;
+    border-bottom: 2px solid grey;
+    padding: 1rem;
+  }
+  .body {
+    margin: 5rem;
+    border-bottom: 2px solid grey;
   }
 </style>

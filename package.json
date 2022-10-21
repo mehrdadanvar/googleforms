@@ -9,10 +9,5 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.12"
-  },
-  "dependencies": {
-    "@coreui/coreui": "^4.2.2",
-    "@coreui/vue": "^4.4.0",
-    "bootstrap": "^5.2.2"
   }
 }
