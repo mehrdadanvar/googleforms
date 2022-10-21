@@ -6,4 +6,6 @@ node_modules
 .output
 .env
 dist
-assets/
+assets/bulk
+assets/Iconsax
+assets/Svg
