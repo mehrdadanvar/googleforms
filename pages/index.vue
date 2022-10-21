@@ -1,6 +1,11 @@
 <template>
   <div class="home">
-    <div class="container">
+    <AppHeader />
+    <Block>
+      <FormHeader />
+    </Block>
+    <Block>
+      <h3>Form Builder</h3>
       <div class="head">
         <QuestionTitle />
         <questionType />
@@ -10,7 +15,8 @@
       </div>
       <!-- <Radio /> -->
       <div class="footer">footer</div>
-    </div>
+    </Block>
+    <SideUtil />
   </div>
 </template>
 
@@ -22,15 +28,19 @@
 </script>
 
 <style scoped>
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .container {
     display: flex;
     flex-direction: column;
-    width: 60rem;
-    height: 30rem;
-    border: 1px solid grey;
-    border-radius: 2rem;
+    justify-content: center;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 1rem;
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
   }
   .head {
     display: flex;

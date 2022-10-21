@@ -1,15 +1,14 @@
 <template>
   <div class="app">
-    <h1>heelo</h1>
     <NuxtPage />
   </div>
 </template>
 
 <script></script>
 
-<style>
+<style lang="scss">
   .app {
     font-family: "Lato";
-    background-color: rgb(198, 180, 224);
+    background-color: #eae2b7;
   }
 </style>
