@@ -1,3 +1,5 @@
+# A trial of cloning google forms with vues js and nuxt!
+you can use all of the files in components directory for your use case 
 # Nuxt 3 Minimal Starter
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
