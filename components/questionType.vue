@@ -1,7 +1,8 @@
 <template>
   <div class="question-type">
     <label for="">Type</label>
-    <select name="q-type" id="" v-model="optionresult">
+    <select name="q-type" id="" v-model="optionresult" :required="true">
+      <option selected="true">multiple choice</option>
       <option v-for="option in options" :value="option.value" :key="option">
         {{ option.type }}
       </option>

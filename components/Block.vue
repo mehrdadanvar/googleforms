@@ -1,13 +1,12 @@
 <template>
   <section class="question">
-    <div class="head">
-      <questionTitle />
-      <questionType />
-    </div>
+    <questionHead />
     <div class="body">
       <MasterRadio />
     </div>
-    <div class="tail">tail</div>
+    <div class="tail">
+      <questionFooter />
+    </div>
   </section>
 </template>
 
@@ -18,7 +17,6 @@
 <style scoped>
   .head {
     display: flex;
-    border-bottom: 1px solid red;
   }
   .body {
     margin: 2rem 1rem;

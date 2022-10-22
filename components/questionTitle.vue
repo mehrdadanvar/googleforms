@@ -1,7 +1,7 @@
 <template>
   <div class="q-title">
     <label for="">Title</label>
-    <input class="question" type="text" name="" id="" />
+    <input class="question" type="text" name="" id="" placeholder="type your title" />
   </div>
 </template>
 
