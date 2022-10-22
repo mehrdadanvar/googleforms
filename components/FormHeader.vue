@@ -18,7 +18,14 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    setup() {
+      let header_text = ref("");
+      return {
+        header_text,
+      };
+    },
+  };
 </script>
 
 <style scoped>
@@ -31,7 +38,6 @@
   }
   .form-title {
     background-color: white;
-
     height: 3.5rem;
     border-radius: 0.5rem;
     font-family: "Lato";

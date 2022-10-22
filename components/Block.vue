@@ -1,6 +1,13 @@
 <template>
-  <section class="block">
-    <slot />
+  <section class="question">
+    <div class="head">
+      <questionTitle />
+      <questionType />
+    </div>
+    <div class="body">
+      <MasterRadio />
+    </div>
+    <div class="tail">tail</div>
   </section>
 </template>
 
@@ -9,9 +16,16 @@
 </script>
 
 <style scoped>
-  .block {
+  .head {
+    display: flex;
+    border-bottom: 1px solid red;
+  }
+  .body {
+    margin: 2rem 1rem;
+  }
+  .question {
     min-width: 20rem;
-    max-width: 50rem;
+    max-width: 60rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

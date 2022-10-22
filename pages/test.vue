@@ -8,6 +8,7 @@
         <MasterRadio />
       </Block>
     </ParentContainer>
+    <Button>press me</Button>
   </main>
 </template>
 

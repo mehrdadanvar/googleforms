@@ -6,7 +6,6 @@
       <button @click="add">
         <img src="../assets/icons/add.svg" alt="" />
       </button>
-      <p>{{ resultset }}</p>
     </div>
     <div class="radio-item" v-for="(item, index) in resultset" :key="item">
       <input class="radio" type="radio" name="name" v-model="radiovalue" :value="item" />

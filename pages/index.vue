@@ -17,6 +17,7 @@
       <div class="footer">footer</div>
     </Block>
     <SideUtil />
+    <Blocks />
   </div>
 </template>
 
