@@ -2,7 +2,7 @@
   <section class="question">
     <questionHead />
     <div class="body">
-      <MasterRadio />
+      <MC />
       <!-- <MainShortanswer /> -->
     </div>
     <div class="tail">

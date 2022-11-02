@@ -5,7 +5,7 @@
         <FormHeader />
       </Block>
       <Block>
-        <MasterRadio />
+        <MC />
       </Block>
     </ParentContainer>
     <Button>press me</Button>

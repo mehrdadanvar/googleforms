@@ -11,14 +11,14 @@
         <questionType />
       </div>
       <div class="body">
-        <MasterRadio />
+        <MC />
       </div>
-      <!-- <Radio /> -->
       <div class="footer">footer</div>
     </Block>
     <SideUtil />
-    <!-- <Blocks /> -->
-    <div class="store"></div>
+    <div class="render">
+      <qrender />
+    </div>
   </div>
 </template>
 

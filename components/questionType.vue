@@ -1,25 +1,37 @@
 <template>
   <div class="question-type">
     <label for="">Type</label>
-    <select name="q-type" id="" v-model="choice" @change="sendup(choice)">
-      <option v-for="option in options" :value="option.value" :key="option">
+    <select name="q-type" id="" v-model="choice" @change="updatechoice">
+      <option v-for="option in options" :key="option">
         {{ option.type }}
       </option>
     </select>
-    <p></p>
+    <p>the user choice is</p>
   </div>
 </template>
 
 <script setup>
+  import { useQstore } from "@/stores/qtypes";
+  //:value="option.value"
+  let Qstore = useQstore();
+  console.log(Qstore.types, Qstore.initial);
   let options = ref([
-    { type: "multiple choice", value: "mc", selected: true },
-    { type: "checkbox", value: "chb", selected: false },
+    { type: "multiple choice", value: "mc", selected: false },
+    { type: "checkbox", value: "chb", selected: true },
     { type: "short answer", value: "sha", selected: false },
     { type: "paragraph", value: "para", selected: false },
     { type: "drop down", value: "dd", selected: false },
     { type: "date", value: "date", selected: false },
     { type: "time", value: "time", selected: false },
   ]);
+  let choice = ref("");
+  function updatechoice() {
+    // console.log("choice value is ", choice.value);
+    Qstore.set_choice(choice.value);
+    console.log("it is working and the value of choice is", choice.value);
+    let user_choice = Qstore.report_user_choice;
+    console.log(user_choice);
+  }
 </script>
 
 <style>
