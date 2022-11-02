@@ -3,7 +3,7 @@
     <questionHead />
     <div class="body">
       <MasterRadio />
-      <MainShortanswer />
+      <!-- <MainShortanswer /> -->
     </div>
     <div class="tail">
       <questionFooter />

@@ -1,25 +1,12 @@
 <template>
   <div class="question-head">
     <questionTitle />
-    <questionType @sendup="somemethod" />
-    <p>mehrdad says {{ child }}</p>
+    <questionType />
+    <p>mehrdad says</p>
   </div>
 </template>
 
-<script>
-  export default {
-    setup() {
-      let child = ref("something");
-      function somemethod() {
-        console.log(sendup);
-      }
-      return {
-        child,
-        somemethod,
-      };
-    },
-  };
-</script>
+<script setup></script>
 
 <style>
   .question-head {

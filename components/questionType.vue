@@ -10,30 +10,16 @@
   </div>
 </template>
 
-<script>
-  export default {
-    setup(context) {
-      let options = ref([
-        { type: "multiple choice", value: "mc", selected: true },
-        { type: "checkbox", value: "chb", selected: false },
-        { type: "short answer", value: "sha", selected: false },
-        { type: "paragraph", value: "para", selected: false },
-        { type: "drop down", value: "dd", selected: false },
-        { type: "date", value: "date", selected: false },
-        { type: "time", value: "time", selected: false },
-      ]);
-      // let choice = ref("");
-      // let sendup = (choice) => {
-      //   context.emit("mehrdad", choice);
-      // };
-      // return {
-      //   options,
-      //   choice,
-      //   sendup,
-      //   store,
-      // };
-    },
-  };
+<script setup>
+  let options = ref([
+    { type: "multiple choice", value: "mc", selected: true },
+    { type: "checkbox", value: "chb", selected: false },
+    { type: "short answer", value: "sha", selected: false },
+    { type: "paragraph", value: "para", selected: false },
+    { type: "drop down", value: "dd", selected: false },
+    { type: "date", value: "date", selected: false },
+    { type: "time", value: "time", selected: false },
+  ]);
 </script>
 
 <style>
