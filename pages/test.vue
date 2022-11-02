@@ -14,10 +14,10 @@
 </template>
 
 <script>
-  import shortanswer from "../components/questions/shortanswer.vue";
-  export default {
-    components: { shortanswer },
-  };
+  // import shortanswer from "../components/questions/shortanswer.vue";
+  // export default {
+  //   components: { shortanswer },
+  // };
 </script>
 
 <style></style>

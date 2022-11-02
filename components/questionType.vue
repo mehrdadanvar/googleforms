@@ -11,7 +11,6 @@
 </template>
 
 <script>
-  import { store } from "../store/store.js";
   export default {
     setup(context) {
       let options = ref([
@@ -23,16 +22,16 @@
         { type: "date", value: "date", selected: false },
         { type: "time", value: "time", selected: false },
       ]);
-      let choice = ref("");
-      let sendup = (choice) => {
-        context.emit("mehrdad", choice);
-      };
-      return {
-        options,
-        choice,
-        sendup,
-        store,
-      };
+      // let choice = ref("");
+      // let sendup = (choice) => {
+      //   context.emit("mehrdad", choice);
+      // };
+      // return {
+      //   options,
+      //   choice,
+      //   sendup,
+      //   store,
+      // };
     },
   };
 </script>
