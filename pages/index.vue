@@ -17,14 +17,12 @@
       <div class="footer">footer</div>
     </Block>
     <SideUtil />
-    <Blocks />
+    <!-- <Blocks /> -->
+    <div class="store"></div>
   </div>
 </template>
 
 <script setup>
-  let name = "index";
-  let title = ref("");
-
   //'monospace', monospace
 </script>
 

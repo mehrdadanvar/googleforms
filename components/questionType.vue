@@ -6,7 +6,7 @@
         {{ option.type }}
       </option>
     </select>
-    <p>{{ store.age }}</p>
+    <p></p>
   </div>
 </template>
 

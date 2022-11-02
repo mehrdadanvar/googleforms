@@ -1,5 +1,7 @@
-import {reactive} from "vue";
+import { defineStore } from "pinia";
 
-export const store = reactive({
-    age:10
-})
+export const useStore = defineStore("main", () => {
+  const count = ref(0);
+  const name = ref("Eduardo");
+  return { count, name };
+});
