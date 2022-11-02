@@ -9,11 +9,15 @@
       </Block>
     </ParentContainer>
     <Button>press me</Button>
+    <shortanswer />
   </main>
 </template>
 
 <script>
-  export default {};
+  import shortanswer from "../components/questions/shortanswer.vue";
+  export default {
+    components: { shortanswer },
+  };
 </script>
 
 <style></style>

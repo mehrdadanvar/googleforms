@@ -1,12 +1,24 @@
 <template>
   <div class="question-head">
     <questionTitle />
-    <questionType />
+    <questionType @sendup="somemethod" />
+    <p>mehrdad says {{ child }}</p>
   </div>
 </template>
 
 <script>
-  export default {};
+  export default {
+    setup() {
+      let child = ref("something");
+      function somemethod() {
+        console.log(sendup);
+      }
+      return {
+        child,
+        somemethod,
+      };
+    },
+  };
 </script>
 
 <style>

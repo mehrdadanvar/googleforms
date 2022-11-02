@@ -3,6 +3,7 @@
     <questionHead />
     <div class="body">
       <MasterRadio />
+      <shortanswer v-show="showshort" @sendup="showshort = true" />
     </div>
     <div class="tail">
       <questionFooter />
@@ -11,13 +12,21 @@
 </template>
 
 <script>
-  export default {};
+  import shortanswer from "./questions/shortanswer.vue";
+  export default {
+    components: {
+      shortanswer,
+    },
+    setup() {
+      let showshort = ref(false);
+      return {
+        showshort,
+      };
+    },
+  };
 </script>
 
 <style scoped>
-  .head {
-    display: flex;
-  }
   .body {
     margin: 2rem 1rem;
   }

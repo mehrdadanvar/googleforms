@@ -4,13 +4,13 @@
       <label>Add Options</label>
       <input class="variable" type="text" v-model="newresult" @keyup.enter="add" />
       <button @click="add">
-        <img src="../assets/icons/add.svg" alt="" />
+        <img src="@/assets/icons/add.svg" alt="" />
       </button>
     </div>
     <div class="radio-item" v-for="(item, index) in resultset" :key="item">
       <input class="radio" type="radio" name="name" v-model="radiovalue" :value="item" />
       <label for="">{{ item.content }}</label>
-      <button @click="minus(index)"><img src="../assets/icons/minus.svg" alt="" /></button>
+      <button @click="minus(index)"><img src="@/assets/icons/minus.svg" alt="" /></button>
     </div>
   </div>
 </template>
