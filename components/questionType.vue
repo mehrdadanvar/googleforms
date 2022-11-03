@@ -6,7 +6,6 @@
         {{ option.type }}
       </option>
     </select>
-    <p>the user choice is</p>
   </div>
 </template>
 
@@ -25,9 +24,9 @@
     { type: "time", value: "time", selected: false },
   ]);
   let choice = ref("");
-  watch(choice, () => {
-    console.log("from watch", choice.value);
-  });
+  // watch(choice, () => {
+  //   console.log("from watch", choice.value);
+  // });
   function updatechoice() {
     // console.log("choice value is ", choice.value);
     Qstore.set_choice(choice.value);
@@ -35,10 +34,10 @@
     let user_choice = Qstore.report_user_choice;
     console.log(user_choice.value);
 
-    const userstate = useState("userstate", () => {
-      return choice.value;
-    });
-    console.log("new use state is", userstate);
+    // const userstate = useState("userstate", () => {
+    //   return choice.value;
+    // });
+    // console.log("new use state is", userstate);
   }
 </script>
 
@@ -53,12 +52,11 @@
     font-size: 18px;
   }
   select {
-    border: 1px solid rgb(211, 211, 211);
     background-color: white;
     width: 15rem;
     height: 3rem;
     border-radius: 0.5rem;
-    padding: 1rem;
-    font-size: 14px;
+    padding-left: 1rem;
+    font-size: 16px;
   }
 </style>

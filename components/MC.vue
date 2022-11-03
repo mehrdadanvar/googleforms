@@ -12,6 +12,7 @@
       <label for="">{{ item.content }}</label>
       <button @click="minus(index)"><img src="@/assets/icons/minus.svg" alt="" /></button>
     </div>
+    <button @click="save_changes">save changes</button>
   </div>
 </template>
 

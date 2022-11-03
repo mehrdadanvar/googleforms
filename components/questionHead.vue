@@ -2,7 +2,6 @@
   <div class="question-head">
     <questionTitle />
     <questionType />
-    <p>mehrdad says</p>
   </div>
 </template>
 

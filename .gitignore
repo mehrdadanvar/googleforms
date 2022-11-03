@@ -9,3 +9,5 @@ dist
 assets/bulk
 assets/Iconsax
 assets/Svg
+
+backend/main.py

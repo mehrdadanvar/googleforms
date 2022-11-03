@@ -1,7 +1,7 @@
 <template>
-  <div class="short-answer">
+  <div class="paragraph">
     <p>your answer</p>
-    <textarea name="" id="" cols="30" rows="10" class="text"></textarea>
+    <textarea name="" id="" cols="30" rows="10" class="paragraph"></textarea>
   </div>
 </template>
 
@@ -10,8 +10,8 @@
 </script>
 
 <style scoped>
-  .text {
+  .paragraph {
     border-radius: 1rem;
-    width: 30rem;
+    width: 50rem;
   }
 </style>

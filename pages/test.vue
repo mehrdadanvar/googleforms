@@ -4,7 +4,6 @@
       <FormHeader />
       <MC />
     </ParentContainer>
-    <Button>press me</Button>
     <shortanswer />
   </main>
 </template>

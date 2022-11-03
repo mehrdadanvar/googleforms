@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 export const useQstore = defineStore("Qstore", {
   state: () => ({
     // types: ["mc", "chb", "sha", "para", "dd", "date", "time"],
-    initial: "mc",
+    initial: "multiple choice",
     user_choice: ref(""),
   }),
   getters: {
