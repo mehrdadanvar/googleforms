@@ -8,6 +8,9 @@ export const useBlockStore = defineStore("BlockStore", {
     read_questions() {
       return this.questions;
     },
+    current_length() {
+      return this.questions.length;
+    },
   },
   actions: {
     async load_questions() {

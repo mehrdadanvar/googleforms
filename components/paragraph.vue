@@ -1,6 +1,6 @@
 <template>
   <div class="paragraph">
-    <p>your answer</p>
+    <p></p>
     <textarea name="" id="" cols="30" rows="10" class="paragraph"></textarea>
   </div>
 </template>

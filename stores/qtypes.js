@@ -11,7 +11,6 @@ export const useQstore = defineStore("Qstore", {
       return state.initial;
     },
     report_user_choice(state) {
-      console.log("hello from reporting the choice");
       let reactive_choice = state.user_choice;
       return reactive_choice;
     },
@@ -19,7 +18,6 @@ export const useQstore = defineStore("Qstore", {
   actions: {
     set_choice(option) {
       this.user_choice = option;
-      console.log("hello from the set choice");
     },
   },
 });

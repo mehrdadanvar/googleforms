@@ -16,9 +16,9 @@
 
 <script setup>
   import { useQstore } from "@/stores/qtypes";
-  import { BlockStore } from "@/stores/questions";
+  import { useBlockStore } from "@/stores/questions";
   let Qstore = useQstore();
-  console.log("from rendere");
+  let BlockStore = useBlockStore();
   let user_choice = ref("");
   watch(Qstore, () => {
     console.log("watch from qrenderer is working", Qstore.report_user_choice);

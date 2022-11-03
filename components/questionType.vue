@@ -32,7 +32,7 @@
     Qstore.set_choice(choice.value);
     console.log("it is working and the value of choice is", choice.value);
     let user_choice = Qstore.report_user_choice;
-    console.log(user_choice.value);
+    console.log(user_choice);
 
     // const userstate = useState("userstate", () => {
     //   return choice.value;

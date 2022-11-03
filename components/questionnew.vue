@@ -10,6 +10,7 @@
     </div>
     <div class="tail">
       <questionFooter />
+      <p>Current length is {{ existing_length }}</p>
     </div>
   </section>
 </template>
@@ -18,11 +19,17 @@
   import { useQstore } from "@/stores/qtypes";
   import { useBlockStore } from "@/stores/questions";
   let Qstore = useQstore();
-  let BlockStore = useBlockStore();
   let user_choice = ref("");
   watch(Qstore, () => {
     // console.log("watch from qrenderer is working", Qstore.report_user_choice);
     user_choice.value = Qstore.report_user_choice;
+  });
+  // Section related to existing questions and generating a new one
+  let BlockStore = useBlockStore();
+  await BlockStore.load_questions();
+  let existing_length = ref(BlockStore.current_length);
+  watch(BlockStore, () => {
+    existing_length.value = BlockStore.current_length;
   });
 </script>
 

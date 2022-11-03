@@ -1,18 +1,7 @@
 <template>
-  <main>
-    <ParentContainer>
-      <FormHeader />
-      <MC />
-    </ParentContainer>
-    <shortanswer />
-  </main>
+  <questionnew />
 </template>
 
-<script>
-  // import shortanswer from "../components/questions/shortanswer.vue";
-  // export default {
-  //   components: { shortanswer },
-  // };
-</script>
+<script></script>
 
 <style></style>
