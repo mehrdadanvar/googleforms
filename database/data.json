@@ -1,0 +1,18 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "type": "multiple choice",
+      "title": "what is your gender?",
+      "description": "please choose one of the following choices",
+      "choices": ["male", "female", "binary"]
+    },
+    {
+      "id": "2",
+      "type": "multiple choice",
+      "title": "what is your gender?",
+      "description": "please choose one of the following choices",
+      "choices": ["male", "female", "binary"]
+    }
+  ]
+}
