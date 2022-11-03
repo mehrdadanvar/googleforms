@@ -14,7 +14,7 @@
   import { useQstore } from "@/stores/qtypes";
   //:value="option.value"
   let Qstore = useQstore();
-  console.log(Qstore.types, Qstore.initial);
+  console.log(Qstore.initial);
   let options = ref([
     { type: "multiple choice", value: "mc", selected: false },
     { type: "checkbox", value: "chb", selected: true },
@@ -25,12 +25,20 @@
     { type: "time", value: "time", selected: false },
   ]);
   let choice = ref("");
+  watch(choice, () => {
+    console.log("from watch", choice.value);
+  });
   function updatechoice() {
     // console.log("choice value is ", choice.value);
     Qstore.set_choice(choice.value);
     console.log("it is working and the value of choice is", choice.value);
     let user_choice = Qstore.report_user_choice;
-    console.log(user_choice);
+    console.log(user_choice.value);
+
+    const userstate = useState("userstate", () => {
+      return choice.value;
+    });
+    console.log("new use state is", userstate);
   }
 </script>
 

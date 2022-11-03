@@ -1,12 +1,8 @@
 <template>
   <main>
     <ParentContainer>
-      <Block>
-        <FormHeader />
-      </Block>
-      <Block>
-        <MC />
-      </Block>
+      <FormHeader />
+      <MC />
     </ParentContainer>
     <Button>press me</Button>
     <shortanswer />

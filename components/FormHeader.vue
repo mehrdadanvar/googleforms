@@ -1,31 +1,20 @@
 <template>
   <div class="form-header">
-    <input
-      class="form-title"
-      type="text"
-      v-model="header_text"
-      @keyup.enter="add"
-      placeholder="Form Title"
-    />
+    <input class="form-title" type="text" v-model="title" @keyup.enter="add" placeholder="Form Title" />
     <input
       class="form-discription"
       type="text"
-      v-model="header_text"
+      v-model="description"
       @keyup.enter="add"
       placeholder="Form Description"
     />
+    <p>{{ title }}-{{ description }}</p>
   </div>
 </template>
 
-<script>
-  export default {
-    setup() {
-      let header_text = ref("");
-      return {
-        header_text,
-      };
-    },
-  };
+<script setup>
+  let title = ref("");
+  let description = ref("");
 </script>
 
 <style scoped>

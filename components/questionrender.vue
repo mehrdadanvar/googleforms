@@ -2,8 +2,10 @@
   <section class="question">
     <questionHead />
     <div class="body">
-      <MC />
-      <!-- <MainShortanswer /> -->
+      <div class="components">
+        <MC v-if="user_choice === 'multiple choice'" />
+        <shortanswer v-if="user_choice === 'short answer'" />
+      </div>
     </div>
     <div class="tail">
       <questionFooter />
@@ -11,7 +13,15 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+  import { useQstore } from "@/stores/qtypes";
+  let Qstore = useQstore();
+  console.log("from rendere");
+  let user_choice = ref("");
+  watch(Qstore, () => {
+    user_choice.value = Qstore.report_user_choice.value;
+  });
+</script>
 
 <style scoped>
   .body {

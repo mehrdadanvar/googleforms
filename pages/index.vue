@@ -1,24 +1,8 @@
 <template>
   <div class="home">
     <AppHeader />
-    <Block>
-      <FormHeader />
-    </Block>
-    <Block>
-      <h3>Form Builder</h3>
-      <div class="head">
-        <QuestionTitle />
-        <questionType />
-      </div>
-      <div class="body">
-        <MC />
-      </div>
-      <div class="footer">footer</div>
-    </Block>
+    <FormHeader />
     <SideUtil />
-    <div class="render">
-      <qrender />
-    </div>
   </div>
 </template>
 

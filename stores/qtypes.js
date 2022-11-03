@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export const useQstore = defineStore("Qstore", {
   state: () => ({
-    types: ["mc", "chb", "sha", "para", "dd", "date", "time"],
+    // types: ["mc", "chb", "sha", "para", "dd", "date", "time"],
     initial: "mc",
     user_choice: ref(""),
   }),
@@ -12,7 +12,8 @@ export const useQstore = defineStore("Qstore", {
     },
     report_user_choice(state) {
       console.log("hello from reporting the choice");
-      return state.user_choice;
+      let reactive_choice = state.user_choice;
+      return reactive_choice;
     },
   },
   actions: {
